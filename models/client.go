@@ -5,7 +5,7 @@ import (
 )
 
 type Client struct {
-	ID        primitive.ObjectID `json:"id,omitempty"`
+	ID        primitive.ObjectID `json:"_id"`
 	Nome      string             `json:"nome"`
 	Email     string             `json:"email"`
 	Senha     string             `json:"senha"`

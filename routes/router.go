@@ -8,6 +8,7 @@ func SetupRouter() *gin.Engine {
 	api := router.Group("/api") // Agrupa todas as rotas dentro de /api
 	{
 		ClientRoutes(api)   // Adiciona rotas de usuários
+		ProductRoutes(api)
 	}
 
 	return router
